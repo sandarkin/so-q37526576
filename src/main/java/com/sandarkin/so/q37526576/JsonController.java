@@ -21,7 +21,7 @@ public class JsonController {
     return this.user;
   }
 
-  @RequestMapping(value = "/html", produces = "text/html")
+  @RequestMapping(value = "/html", produces = "application/json")
   public ModelAndView getUserHtml() throws Exception {
     return new ModelAndView("user", Collections.singletonMap("user", this.user));
   }
